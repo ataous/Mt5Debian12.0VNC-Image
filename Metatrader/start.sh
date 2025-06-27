@@ -9,7 +9,8 @@ metatrader_version="5.0.5050"
 mt5server_port="8001"
 mono_url="https://dl.winehq.org/wine/wine-mono/10.0.0/wine-mono-10.0.0-x86.msi"
 python_url="https://www.python.org/ftp/python/3.13.4/python-3.13.4-amd64.exe"
-mt5setup_url="https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/mt5setup.exe"
+#mt5setup_url="https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/mt5setup.exe"
+mt5setup_url="https://github.com/ataous/mt5/releases/download/v1.0/mt5setup.exe"
 
 # Function to display a graphical message
 show_message() {
