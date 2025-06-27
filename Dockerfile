@@ -10,27 +10,28 @@ ENV TITLE=Metatrader5
 ENV WINEPREFIX="/config/.wine"
 ENV WINEARCH=win64
 
-ENV TMPDIR=/tmp
-ENV TMP=/tmp
-ENV TEMP=/tmp
+#ENV TMPDIR=/tmp
+#ENV TMP=/tmp
+#ENV TEMP=/tmp
 
 # Update package lists and upgrade packages
 RUN apt-get update && apt-get upgrade -y
 
 # Install required packages and dependencies for Python 3.13 compilation
 RUN apt-get install -y \
-    wget \
-    build-essential \
-    zlib1g-dev \
-    libncurses5-dev \
-    libgdbm-dev \
-    libnss3-dev \
-    libssl-dev \
-    libreadline-dev \
-    libffi-dev \
-    libsqlite3-dev \
-    libbz2-dev \
-    curl
+    wget 
+    #\
+    #build-essential \
+    #zlib1g-dev \
+    #libncurses5-dev \
+    #libgdbm-dev \
+    #libnss3-dev \
+    #libssl-dev \
+    #libreadline-dev \
+    #libffi-dev \
+    #libsqlite3-dev \
+    #libbz2-dev \
+    #curl
 
 # Download and install Python 3.13
 RUN wget https://www.python.org/ftp/python/3.13.4/Python-3.13.4.tgz \
