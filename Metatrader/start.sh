@@ -69,6 +69,7 @@ else
 
     # Download and install MT5
     show_message "[3/7] Downloading MT5 installer..."
+    show_message "[3/7] mt5setup_url: $mt5setup_url"
     curl -o /config/.wine/drive_c/mt5setup.exe $mt5setup_url
     show_message "[3/7] Installing MetaTrader 5..."
     $wine_executable "/config/.wine/drive_c/mt5setup.exe" "/auto" &
