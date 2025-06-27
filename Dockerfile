@@ -4,7 +4,7 @@ FROM ghcr.io/linuxserver/baseimage-kasmvnc:debianbookworm
 ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Metatrader Docker:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="saeed"
+LABEL maintainer="gmartin"
 
 ENV TITLE=Metatrader5
 ENV WINEPREFIX="/config/.wine"
